@@ -137,11 +137,11 @@ Resources:
       AlarmName: ALBRequests
       ComparisonOperator: GreaterThanThreshold
       EvaluationPeriods: 1
-      MetricName: RequestCount
+      MetricName: CPUUtilization
       Namespace: AWS/EC2
       Period: 300  # 5 minutes (in seconds)
       Statistic: Sum
-      Threshold: 100
+      Threshold: 20.0
       AlarmDescription: Alarm that triggers when CPU utilization is greater than 30% within 5 minutes
       AlarmActions:
         - !Ref ScalingPolicy
