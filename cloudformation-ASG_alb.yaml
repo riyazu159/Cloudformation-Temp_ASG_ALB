@@ -134,7 +134,7 @@ Resources:
   CPUMetricAlarm:
     Type: AWS::CloudWatch::Alarm
     Properties:
-      AlarmName: ALBRequests
+      AlarmName: CPUUtilization
       ComparisonOperator: GreaterThanThreshold
       EvaluationPeriods: 1
       MetricName: CPUUtilization
